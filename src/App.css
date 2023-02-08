@@ -93,8 +93,8 @@ Link:link {
 .navbar-menu>a,
 .navbar-menu>Link {
     text-align: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    /* padding-left: 0.5rem; */
+    /* padding-right: 0.5rem; */
 }
 
 .mobile {
@@ -439,108 +439,12 @@ footer>menu {
 
 
 
-/* MEDIA QUERIES------------------------------------------------------*/
-
-@media screen and (max-width: 960px) {
-
-    /* Heading responsive */
-    .action-button {
-        font-size: 1.2rem;
-    }
-
-    /* Special responsive */
-    .specials {
-        margin: 0 -2rem 0 -2rem;
-    }
-
-    .specials-topbar {
-        flex-wrap: wrap;
-        margin-left: 2rem;
-    }
-
-    .specials-cards {
-        display: none;
-    }
-
-    .specials-carousel {
-        display: block;
-    }
-
-    .menu-card {
-        padding-bottom: 2rem;
-    }
-
-    /* TESTIMONIAL responsive */
-    .testimonials-topbar>h1 {
-        margin: 2rem 0 1rem 0;
-    }
-
-    /* ABOUT responsive */
-    .double-image {
-        max-height: 16rem;
-    }
-
-    .about-us {
-        grid-gap: 12vw;
-    }
-
-    /* RESERVE A TABLE (Form) */
-
-    .reserve-table {
-        margin-top: 0rem;
-    }
-
-    .redirect-button {
-        padding: 1vh 2rem 1vh 2rem;
-        font-size: 14px;
-    }
-
-    .confirmation-header {
-        margin-top: 0rem;
-    }
-
-    .reserve-header-text {
-        font-size: 15px;
-    }
+/* MEDIA QUERIES------------------------------------------------------ */
 
 
-}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
-    /* Heading responsive */
-    .hero-text>p {
-        font-size: 0.8rem;
-    }
-
-    /* TESTIMONIAL responsive */
-    .testimonials-carousel {
-        display: block;
-        background-color: #EDEFEE;
-        padding-bottom: 0;
-    }
-
-    .testimonials-cards {
-        display: none;
-    }
-
-    .testimonial-card>p {
-        margin-top: -1rem;
-        margin-bottom: 2.5rem;
-    }
-
-    /* ABOUT responsive */
-    .about-us {
-        grid-gap: 8vw;
-    }
-
-    .double-image {
-        max-height: 16rem;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
 
 
     /* Navbar responsive*/
@@ -571,6 +475,10 @@ footer>menu {
     }
 
     /* Heading responsive */
+    .hero-text>p {
+        font-size: 0.8rem;
+    }
+
     .hero-text>h1 {
         font-size: 2.2rem;
         margin-top: 0rem;
@@ -587,10 +495,32 @@ footer>menu {
         padding: 1.25rem 2rem 1.2rem 2rem;
     }
 
+    .action-button {
+        font-size: 1.2rem;
+    }
+
+
     /* specials responsive */
 
     .specials {
         padding: 0 2rem 0 2rem;
+    }
+
+    .specials-topbar {
+        flex-wrap: wrap;
+        margin-left: 2rem;
+    }
+
+    .specials-cards {
+        display: none;
+    }
+
+    .specials-carousel {
+        display: block;
+    }
+
+    .menu-card {
+        padding-bottom: 2rem;
     }
 
     /* TESTIMONIAL responsive */
@@ -598,6 +528,26 @@ footer>menu {
     .testimonials {
         padding: 0 2rem 0 2rem;
     }
+
+    .testimonials-carousel {
+        display: block;
+        background-color: #EDEFEE;
+        padding-bottom: 0;
+    }
+
+    .testimonials-cards {
+        display: none;
+    }
+
+    .testimonial-card>p {
+        margin-top: -1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .testimonials-topbar>h1 {
+        margin: 2rem 0 1rem 0;
+    }
+
 
     /* ABOUT responsive */
 
@@ -631,6 +581,7 @@ footer>menu {
         top: -3rem;
         left: 4.5rem;
     }
+
 
 
 
@@ -673,8 +624,6 @@ footer>menu {
     .reserve-header-text {
         font-size: 15px;
     }
-
-
 
 
 }

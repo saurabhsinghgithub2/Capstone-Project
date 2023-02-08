@@ -1,6 +1,6 @@
 import React from 'react'
 import Heading from './Heading';
-import ReservationForm from './ReservationForm';
+import ReservationForm from './BookingForm';
 import { reservationApi } from './reservationApi'
 import { useReducer } from 'react';
 
@@ -19,7 +19,7 @@ export default function Reservation() {
 
   return (
     <>
-      <Heading head='Table reservation' />
+      <Heading head='Reserve a table' />
       <ReservationForm availableTimes={availableTimes} updateTimes={dispatch} />
     </>
   );
