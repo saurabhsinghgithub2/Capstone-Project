@@ -7,15 +7,14 @@
 //   expect(linkElement).toBeInTheDocument();
 // });
 
-import { fireEvent, render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { validateEmail, validatePhone } from './components/Booking/fieldsValidation';
-import BookingPage, { updateTimes, initializeTimes } from './components/Booking/BookingPage';
+import reservationpage, { updateTimes, initializeTimes } from './reservation';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 test('Text exists in BookingForm page.', () => {
   render(
     <BrowserRouter>
-      <BookingPage />
+      <reservationpage />
     </BrowserRouter>
   );
   const linkElement = screen.getByText(/Choose date/i);
@@ -77,7 +76,7 @@ describe(
 test('should test email input validity.', () => {
   render(
     <BrowserRouter>
-      <BookingPage />
+      <reservationpage />
     </BrowserRouter>
   );
   const emailInput = screen.getByLabelText(/email/);
@@ -100,7 +99,7 @@ test('should test email input validity.', () => {
 test('should test phone input validity.', () => {
   render(
     <BrowserRouter>
-      <BookingPage />
+      <reservationpage />
     </BrowserRouter>
   );
   const phoneInput = screen.getByLabelText(/phone/);
@@ -123,7 +122,7 @@ test('should test phone input validity.', () => {
 test('should test for first name input validity.', () => {
   render(
     <BrowserRouter>
-      <BookingPage />
+      <reservationpage />
     </BrowserRouter>
   );
   const firstName = screen.getByLabelText(/firstName/);
@@ -149,7 +148,7 @@ test('should test for first name input validity.', () => {
 test('should test for last name input validity.', () => {
   render(
     <BrowserRouter>
-      <BookingPage />
+      <reservationpage />
     </BrowserRouter>
   );
   const lastName = screen.getByLabelText(/lastName/);
