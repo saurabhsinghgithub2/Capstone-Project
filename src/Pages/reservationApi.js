@@ -7,7 +7,7 @@ const seededRandom = function (seed) {
     };
 }
 
-export function fetchAPI(date) {
+export function reservationApi(date) {
     let result = [];
     let dt = new Date(date)
     let seed = dt.getDate();

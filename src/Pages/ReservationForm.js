@@ -36,7 +36,7 @@ export default function ReservationForm(props) {
             <div>
                 <label htmlFor="fName">First Name</label> <br></br>
                 <input type="text" id="fName" placeholder="First Name"
-                    required minLength={2} maxLength={50}
+                    required minLength={2} maxLength={40}
                     value={fName}
                     onChange={e => setFName(e.target.value)}></input>
             </div>
@@ -44,7 +44,7 @@ export default function ReservationForm(props) {
             <div>
                 <label htmlFor="lName">Last Name</label> <br></br>
                 <input type="text" id="lName" placeholder="Last Name"
-                    minLength={2} maxLength={50}
+                    minLength={2} maxLength={40}
                     value={lName}
                     onChange={e => setLName(e.target.value)}></input>
             </div>
@@ -95,9 +95,9 @@ export default function ReservationForm(props) {
                     value={occasion}
                     onChange={e => setOccasion(e.target.value)}>
                     <option>None</option>
-                    <option>Birthday</option>
                     <option>Anniversary</option>
                     <option>Engagement</option>
+                    <option>Birthday</option>
                     <option>Other</option>
                 </select>
             </div>
@@ -109,8 +109,8 @@ export default function ReservationForm(props) {
                     onChange={e => setPreferences(e.target.value)}>
                     <option>None</option>
                     <option>Indoors</option>
-                    <option>Outdoor (Patio)</option>
                     <option>Outdoor (Sidewalk)</option>
+                    <option>Outdoor (Patio)</option>
                 </select>
             </div>
 
